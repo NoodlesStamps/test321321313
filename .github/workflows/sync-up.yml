@@ -1,25 +1,17 @@
-#.github/workflows/sync-up.yaml
-name: Sync Common Code
-
+name: Sync Files
 on:
-  pull_request:
+  push:
     branches:
       - main
-    types: [closed]
-
+      - master
+  workflow_dispatch:
 jobs:
-  sync_backup_workflow:
-    runs-on: [atc-ubuntu-22.04-v2]
-    if: github.event.pull_request.merged == true
+  sync:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Sync Up
-        uses: BetaHuhn/repo-file-sync-action@latest
+      - name: Checkout Repository
+        uses: actions/checkout@main
+      - name: Run GitHub File Sync
+        uses: BetaHuhn/repo-file-sync-action@v1
         with:
-          GH_PAT: ${{ secrets.GH_TOKEN }}
-          CONFIG_PATH: .github/sync.yml
-          COMMIT_EACH_FILE: false
-          PR_LABELS: "automated-sync"
-          # Uncomment to skip Pull Request and push directly
-          # SKIP_PR: true
+          GH_PAT: ${{ secrets.GH_PAT }}
