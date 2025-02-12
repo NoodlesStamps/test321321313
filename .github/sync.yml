@@ -1,4 +1,6 @@
 
 BetaHuhn/repo-file-sync-action:
   - source: .github/workflows/
-    dest: ./yo
+    dest: .github/yes/
+    repos: |
+      BetaHuhn/repo-file-sync-action
