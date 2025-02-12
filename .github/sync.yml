@@ -1,4 +1,4 @@
 
-kbrashears5/kbrashears5:
-  - source: .github/workflows/file-sync-python.yml
-    dest: .github/workflows/file-sync-python.yml
+BetaHuhn/repo-file-sync-action:
+  - source: .github/workflows/
+    dest: ./yo
