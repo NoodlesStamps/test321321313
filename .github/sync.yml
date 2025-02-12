@@ -1,4 +1,4 @@
 
 BetaHuhn/repo-file-sync-action:
-  - source: src/
+  - source: /src/
     dest: /src/
