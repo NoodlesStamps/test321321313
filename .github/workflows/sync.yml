@@ -3,5 +3,5 @@ group:
   repos: |
     kbrashears5/kbrashears5
   files:
-    - source: .
-      dest: ./test
+    - source: ./test
+      dest: ./test2/
