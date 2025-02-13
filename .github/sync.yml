@@ -2,13 +2,7 @@
 
 
 group:
-  # dependabot files
-  - files:
-      - source: configs/dependabot.yml
-        dest: .github/dependabot.yml
-      - source: workflows/dependencies/dependabot.yml
-        dest: .github/workflows/dependabot.yml
-    repos: |
+  repos: |
       BetaHuhn/do-spaces-action
       BetaHuhn/running-at
       BetaHuhn/spaces-cli
@@ -16,3 +10,6 @@ group:
       BetaHuhn/ejs-serve
       BetaHuhn/feedback-js
       BetaHuhn/drkmd.js
+  files:
+    - source: .github/FUNDING.yml
+      dest: .github/FUNDING.yml
