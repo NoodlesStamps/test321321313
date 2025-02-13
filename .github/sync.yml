@@ -1,4 +1,4 @@
 
 BetaHuhn/repo-file-sync-action:
-    - source: LICENSE.md
-      dest: LICENSE
+    - source: README.md
+      dest: README.md
