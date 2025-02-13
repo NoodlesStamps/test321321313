@@ -1,11 +1,18 @@
-BetaHuhn/repo-file-sync-action:
-  - LICENSE
-  - .gitignore
+
+
+
 group:
   # dependabot files
   - files:
-      - source: LICENSE
-        dest: LICENSE
-
+      - source: configs/dependabot.yml
+        dest: .github/dependabot.yml
+      - source: workflows/dependencies/dependabot.yml
+        dest: .github/workflows/dependabot.yml
     repos: |
-BetaHuhn/repo-file-sync-action
+      BetaHuhn/do-spaces-action
+      BetaHuhn/running-at
+      BetaHuhn/spaces-cli
+      BetaHuhn/metadata-scraper
+      BetaHuhn/ejs-serve
+      BetaHuhn/feedback-js
+      BetaHuhn/drkmd.js
