@@ -1,4 +1,4 @@
 
 BetaHuhn/repo-file-sync-action:
-  - source: /dist/
-    dest: /dist/
+    - source: LICENSE.md
+      dest: LICENSE
