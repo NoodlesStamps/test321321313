@@ -1,4 +1,7 @@
+group:
+  repos: |
+    BetaHuhn/repo-file-sync-action
+  files: 
 
-BetaHuhn/repo-file-sync-action:
-    - source: README.md
-      dest: README.md
+    - source: LICENSE.md
+      dest: LICENSE
