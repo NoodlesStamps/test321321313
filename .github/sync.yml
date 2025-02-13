@@ -1,3 +1,11 @@
 BetaHuhn/repo-file-sync-action:
   - LICENSE
   - .gitignore
+group:
+  # dependabot files
+  - files:
+      - source: LICENSE
+        dest: LICENSE
+
+    repos: |
+BetaHuhn/repo-file-sync-action
