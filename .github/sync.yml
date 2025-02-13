@@ -1,7 +1,3 @@
-group:
-  repos: |
-    BetaHuhn/repo-file-sync-action
-    files: 
-
-    - source: LICENSE.md
-      dest: LICENSE
+BetaHuhn/repo-file-sync-action:
+  - LICENSE
+  - .gitignore
