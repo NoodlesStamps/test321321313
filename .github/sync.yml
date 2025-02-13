@@ -1,3 +1,3 @@
 BetaHuhn/metadata-scraper:
-  - source: examples/
-    dest: /out/
+  - source: /examples/
+    dest: .
